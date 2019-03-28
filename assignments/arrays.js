@@ -138,13 +138,13 @@ console.log(oldCars.length + " cars made before the year 2000.");
     //return that array to the variable BMWAndAudi
     //console.log that array as JSON.stringify() so it's shown as a string of text, not objects with key/value pairs.
 
-function getCarMakes(carInventory) {
+function getCarMakes(carInventory, make1, make2) {
     let carMakesArray = [];
     for (i=0; i<carInventory.length; i++) {
-        if (carInventory[i].car_make === 'BMW') {
+        if (carInventory[i].car_make === make1) {
             carMakesArray.push(carInventory[i]);
         }
-        else if (carInventory[i].car_make === 'Audi') {
+        else if (carInventory[i].car_make === make2) {
             carMakesArray.push(carInventory[i]);
         }
         else {
@@ -153,5 +153,5 @@ function getCarMakes(carInventory) {
     }
     return carMakesArray;
 }
-let BMWAndAudi = getCarMakes(inventory);
+let BMWAndAudi = getCarMakes(inventory, 'BMW', 'Audi');
 console.log(JSON.stringify(BMWAndAudi));
