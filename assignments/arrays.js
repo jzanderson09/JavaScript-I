@@ -155,6 +155,3 @@ function getCarMakes(carInventory) {
 }
 let BMWAndAudi = getCarMakes(inventory);
 console.log(JSON.stringify(BMWAndAudi));
-
-
-
