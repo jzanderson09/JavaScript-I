@@ -82,7 +82,7 @@ const example = {
   
   // ==== Challenge 3: Object Methods ==== 
   // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-  console.log(kennan.speak());
+  kennan.speak();
 
   // --> Refer to lines 33-35.
   
